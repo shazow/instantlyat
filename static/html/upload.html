@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+
+<title>super secret upload api interface</title>
+<style type="text/css">
+</style>
+
+
+</head>
+
+<body>
+
+
+<form action="/api" method="post" enctype='multipart/form-data'>
+    <input type="text" name="place" /><label for="place">Place*</label><br />
+    <input type="text" name="author" /><label for="author">Author</label><br />
+    <input type="text" name="caption" /><label for="captain">Caption</label><br />
+    <input type="file" name="upload" /><label for="upload">Image*</label><br />
+
+    <input type="hidden" name="function" value="upload" />
+    <input type="submit" />
+</form>
+
+
+</body>
+
+</html>

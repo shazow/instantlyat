@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>{{ place.name }} | instantly.at</title>
+</head>
+
+
+<body>
+    <ul>
+{% for img in images %}
+        <li><a href="{{ img.get_path }}"><img src="{{ img.get_thumbnail_path }}" title="{{ img.time_created }}: {{ img.caption }}" /></a></li>
+{% endfor %}
+    </ul>
+</body>
+
+
+</html>
